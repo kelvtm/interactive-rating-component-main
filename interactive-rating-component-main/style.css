@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&family=Hanken+Grotesk:wght@800&family=Outfit:wght@300&family=Red+Hat+Display:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  /* primary color */
+  --Orange: hsl(25, 97%, 53%);
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --More-Dark-Blue: hsla(214, 20%, 14%, 0.82);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  /* fonts */
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  background-color: var(--Very-Dark-Blue);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-page {
+  padding: 30px;
+  background-color: var(--More-Dark-Blue);
+  max-width: 380px;
+  border-radius: 1rem;
+}
+.how {
+  font-size: 1.5rem;
+  color: var(--White);
+}
+.text {
+  color: var(--Light-Grey);
+  line-height: 1.6;
+}
+.appreciation-page {
+  padding: 30px;
+  background-color: var(--More-Dark-Blue);
+  max-width: 380px;
+  border-radius: 1rem;
+  text-align: center;
+}
+.btn {
+  border-radius: 50%;
+  border: none;
+  padding: 1rem;
+  background-color: var(--Dark-Blue);
+}
+.btn:focus {
+  background-color: var(--Light-Grey);
+}
+.rate:hover {
+  background-color: var(--Orange);
+}
+.rate:active {
+  background-color: var(--Light-Grey);
+}
+.submit:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+.result {
+  background-color: var(--Dark-Blue);
+  border-radius: 2rem;
+  color: var(--Orange);
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.hide {
+  display: none;
+}
+.active {
+  background-color: var(--Light-Grey);
+}
+.submit {
+  background-color: var(--Orange);
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  letter-spacing: 0.2rem;
+  color: var(--White);
+}
+.thanks {
+  color: var(--White);
+}
+.btn-child {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
