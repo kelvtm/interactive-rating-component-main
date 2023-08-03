@@ -25,8 +25,12 @@ btn5.addEventListener("click", () => {
   btnRating = 5;
 });
 submitBtn.addEventListener("click", () => {
-  feedbackPage.classList.add("hide");
-  result.textContent = `You selected ${btnRating} out of 5`;
-  appreciationPage.classList.remove("hide");
-  console.log("you have submited");
+  if (btnRating !== 0) {
+    feedbackPage.classList.add("hide");
+    result.textContent = `You selected ${btnRating} out of 5`;
+    appreciationPage.classList.remove("hide");
+    console.log("you have submited");
+  } else {
+    alert(`please select a rating`);
+  }
 });
